@@ -14,5 +14,7 @@ function getTextFieldValue (id){
 
 // Shared Function for validation
 function validateAmount(input){
-    
+    if(input < 1 || isNaN(input)){
+        return alert('Invalid Input! Please try again!', location.reload())
+    }
 }
