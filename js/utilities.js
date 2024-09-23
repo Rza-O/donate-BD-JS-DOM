@@ -2,19 +2,19 @@
 function getInputFieldById(id){
     const inputAmount = document.getElementById(id).value;
     const inputNumber = parseFloat(inputAmount);
-    return inputNumber;
+    return parseFloat(inputNumber.toFixed(2));
 } 
 
 // Shared function to get text field value
 function getTextFieldValue (id){
     const textNumber = parseFloat(document.getElementById(id).innerText);
-    return textNumber;
+    return parseFloat(textNumber.toFixed(2));
 }
 
 
 // Shared Function for validation
-function validateAmount(input){
-    if(input < 1 || isNaN(input)){
+function validateAmount(num){
+    if(num < 1 || isNaN(num)){
         return alert('Invalid Input! Please try again!', location.reload())
     }
 }

@@ -19,8 +19,22 @@ donateBtnFeni.addEventListener('click', function(){
     validateAmount(donateAmount);
     const myAmount = getTextFieldValue('my-amount');
     const feniSum = getTextFieldValue('feni-sum') + donateAmount;
-    const remainingBalance = myAmount -donateAmount;
+    const remainingBalance = myAmount - donateAmount;
     document.getElementById('feni-sum').innerText = feniSum;
     document.getElementById('my-amount').innerText = remainingBalance;
-    return
+    return;
 });
+
+
+//Making Aid For Injured Functional
+const donateBtnAid = document.getElementById('btn-donate-aid');
+donateBtnAid.addEventListener('click', function(){
+    const donateAmount = getInputFieldById('donate-amount-aid');
+    validateAmount(donateAmount);
+    const myAmount = getTextFieldValue('my-amount');
+    const aidSum = getTextFieldValue ('aid-sum') + donateAmount;
+    const remainingBalance = myAmount - donateAmount;
+    document.getElementById('aid-sum').innerText = aidSum;
+    document.getElementById('my-amount').innerText = remainingBalance;
+    return;
+})
