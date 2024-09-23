@@ -1,6 +1,6 @@
 // Making Noakhali Donation money finctional
-const donateBtn = document.getElementById('btn-donate-noakhali');
-donateBtn.addEventListener('click', function(){
+const donateBtnNoakhali = document.getElementById('btn-donate-noakhali');
+donateBtnNoakhali.addEventListener('click', function(){
     const myAmount = getTextFieldValue('my-amount');
     const donateAmount = getInputFieldById('donate-amount');
     if(donateAmount > 0 && !isNaN(donateAmount)){
@@ -16,3 +16,7 @@ donateBtn.addEventListener('click', function(){
         alert("Invalid Input! Please try again!", location.reload());
     }
 });
+
+
+// Making Feni Donation Money Functional
+Cons

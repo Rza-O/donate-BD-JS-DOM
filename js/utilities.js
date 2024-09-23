@@ -7,6 +7,12 @@ function getInputFieldById(id){
 
 // Shared function to get text field value
 function getTextFieldValue (id){
-    const stillDonated = parseFloat(document.getElementById(id).innerText);
-    return stillDonated;
+    const textNumber = parseFloat(document.getElementById(id).innerText);
+    return textNumber;
+}
+
+
+// Shared Function for validation
+function validateAmount(input){
+    
 }

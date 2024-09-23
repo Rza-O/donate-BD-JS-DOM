@@ -25,6 +25,17 @@
                         secondary: '#f9f7f3'
                     },
                 },
+                screens: {
+                    'sm': '320px',
+
+                    'md': '640px',
+
+                    'lg': '1024px',
+
+                    'xl': '1280px',
+
+                    '2xl': '1536px',
+                }
             },
         }
     </script>
@@ -59,7 +70,7 @@
         <!-- Buttons of pages ends -->
 
         <!-- Noakhali Flood card starts here -->
-        <div class="flex sm:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-8">
+        <div class="flex sm:flex-col md:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-8">
             <!-- Noakhali image -->
             <div class="w-auto my-auto">
                 <img src="./assets/noakhali.png" alt="">
@@ -81,7 +92,7 @@
         <!-- Noakhali Flood card ends here -->
 
         <!-- Feni Flood Card Starts here -->
-        <div class="flex sm:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-8">
+        <div class="flex sm:flex-col md:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-8">
             <!-- Feni image -->
             <div class="w-auto my-auto">
                 <img src="./assets/feni.png" alt="">
@@ -106,7 +117,7 @@
         <!-- Feni Flood Card ends here -->
 
         <!-- Aid For injure Card Starts -->
-        <div class="flex sm:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-20">
+        <div class="flex sm:flex-col md:flex-col lg:flex-row p-8 border-2 border-solid border-base rounded-2xl mb-20">
             <!-- Aid image -->
             <div class="w-auto my-auto">
                 <img src="./assets/quota-protest.png" alt="">
@@ -134,10 +145,12 @@
     <input type="checkbox" id="my_modal_6" class="modal-toggle" />
     <div id="modal-6" class="modal" role="dialog">
         <div class="modal-box">
-            <h3 class="text-lg font-bold">Hello!</h3>
-            <p class="py-4">This modal works with a hidden checkbox!</p>
-            <div class="modal-action">
-                <label for="my_modal_6" class="btn">Close!</label>
+            <h1 class="text-lg font-bold mb-4 text-center">Congrats!</h1>
+            <h1 class="text-6xl font-bold text-center">🪙</h1>
+            <p class="text-center">You Have Donated For HumanKind!</p>
+            <h3 class="text-large font-bold text-center">Successfully</h3>
+            <div class="modal-action flex justify-center">
+                <label for="my_modal_6" class="btn">Close Confirmation</label>
             </div>
         </div>
     </div>
