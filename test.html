@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <!-- Lexend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and DaisyUI CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lexend: 'Lexend',
+                    },
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#f9f7f3'
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <header>
+        <!-- Navbar Starts Here -->
+        <div class="navbar bg-secondary">
+            <div class="navbar-start">
+                <a class="btn bg-primary">Blog</a>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost text-xl">
+                    <img src="./assets/logo.png" alt="Logo-of-website">
+                    Donate Bangladesh
+                </a>
+            </div>
+
+            <div class="navbar-end sm:text-sm md:text-lg md:font-bold">
+                🪙5500 BDT
+            </div>
+        </div>
+        <!-- Navbar ends Here -->
+    </header>
+    <main class="mx-36">
+        <!-- Buttons of pages starts -->
+        <div class="flex justify-center mt-20">
+            <button class="btn bg-primary mr-4">Donation</button>
+            <button class="btn bg-primary ">History</button>
+        </div>
+        <!-- Buttons of pages ends -->
+
+        <!-- Noakhali Flood card starts here -->
+        <div class="flex border-2 border-solid border-red-500">
+            <!-- Noakhali image -->
+            <img src="./assets/noakhali.png" alt="">
+            <!-- Noakhali Text -->
+            <div class="mr-8">
+                <button class="btn btn-active btn-ghost ">🪙25000 BDT</button>
+                <h3 class="text-2xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="font-light w-10/12">The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation will help provide
+                    essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+                    difference. Please
+                    join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button> 
+            </div>
+            </div>
+            <!-- Noakhali Flood card ends here -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
