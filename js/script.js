@@ -2,8 +2,8 @@
 const donateBtnNoakhali = document.getElementById('btn-donate-noakhali');
 donateBtnNoakhali.addEventListener('click', function(){
     const donateAmount = getInputFieldById('donate-amount-noakhali');
-    validateAmount(donateAmount);
     const myAmount = getTextFieldValue('my-amount');
+    validateAmount(donateAmount, myAmount);
     const noakhaliSum = getTextFieldValue('noakhali-sum') + donateAmount;
     const remainingBalance = myAmount - donateAmount; 
     document.getElementById('noakhali-sum').innerText = noakhaliSum;
@@ -16,8 +16,8 @@ donateBtnNoakhali.addEventListener('click', function(){
 const donateBtnFeni = document.getElementById('btn-donate-feni');
 donateBtnFeni.addEventListener('click', function(){
     const donateAmount = getInputFieldById('donate-amount-feni');
-    validateAmount(donateAmount);
     const myAmount = getTextFieldValue('my-amount');
+    validateAmount(donateAmount, myAmount);
     const feniSum = getTextFieldValue('feni-sum') + donateAmount;
     const remainingBalance = myAmount - donateAmount;
     document.getElementById('feni-sum').innerText = feniSum;
@@ -30,8 +30,8 @@ donateBtnFeni.addEventListener('click', function(){
 const donateBtnAid = document.getElementById('btn-donate-aid');
 donateBtnAid.addEventListener('click', function(){
     const donateAmount = getInputFieldById('donate-amount-aid');
-    validateAmount(donateAmount);
     const myAmount = getTextFieldValue('my-amount');
+    validateAmount(donateAmount, myAmount);
     const aidSum = getTextFieldValue ('aid-sum') + donateAmount;
     const remainingBalance = myAmount - donateAmount;
     document.getElementById('aid-sum').innerText = aidSum;
