@@ -1,4 +1,12 @@
 // Shared function to get the value by id and make it float
-function(id){
-    
+function getInputFieldById(id){
+    const inputAmount = document.getElementById(id).value;
+    const inputNumber = parseFloat(inputAmount);
+    return inputNumber;
+} 
+
+// Shared function to get text field value
+function getTextFieldValue (id){
+    const stillDonated = parseFloat(document.getElementById(id).innerText);
+    return stillDonated;
 }
