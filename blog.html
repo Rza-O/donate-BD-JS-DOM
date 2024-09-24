@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <!-- Lexend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and DaisyUI CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lexend: 'Lexend',
+                    },
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#f9f7f3'
+                    },
+                },
+                screens: {
+                    'sm': '320px',
+
+                    'md': '640px',
+
+                    'lg': '1024px',
+
+                    'xl': '1280px',
+
+                    '2xl': '1536px',
+                }
+            },
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <header class="relative">
+        <!-- Navbar Starts Here -->
+        <nav class="navbar bg-secondary fixed backdrop-blur-sm top-0 left-0 right-0 ">
+            <div class="navbar-start">
+                <a class="sm:hidden md:flex btn bg-primary">Home</a>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost text-xl">
+                    <img src="./assets/logo.png" alt="Logo-of-website">
+                    Donate Bangladesh
+                </a>
+            </div>
+            <div class="navbar-end sm:text-sm md:text-lg md:font-bold">
+                🪙<span id="my-amount">5500</span> BDT
+            </div>
+        </nav>
+        <!-- Navbar ends Here -->
+    </header>
+    <main>
+    
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/features.js"></script>
+</body>
+
+</html>
