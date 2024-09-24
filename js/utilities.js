@@ -14,7 +14,16 @@ function getTextFieldValue (id){
 
 // Shared Function for validation
 function validateAmount(num, num2){
-    if(num2 < num || num < 1 && isNaN(num)){
-        return alert('Invalid Input! Please try again!', location.reload())
+    if (isNaN(num) || num < 1){
+        // num < 1 || num2 < num && isNaN(num)
+        // return alert('Invalid Input! Please try again!', location.reload())
+        alert('Invalid Input! Please try again!');
+        location.reload();
+        return
+    }
+    if(num2 < num){
+        alert('Invalid Input! Please try again!');
+        location.reload();
+        return
     }
 }
