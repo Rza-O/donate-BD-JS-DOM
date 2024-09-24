@@ -90,14 +90,28 @@
                     <input type="radio" name="my-accordion-4" />
                     <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Event Delegation is a technique in JavaScript where you attach a single event listener to a parent element to handle
+                        events from its child elements. This is possible due to event bubbling, where events triggered on a child element
+                        "bubble up" to its ancestors.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
                     <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p class="mb-1">We can manipulate an element's attributes using the DOM in the following ways:</p>
+                        <ul class="list-disc px-5">
+                            <li>To set an attribute we can use setAttribute() method.</li>
+                            <li>To get an attribute we can use getAttribute() method.</li>
+                            <li>To remove an attribute we can use removeAttribute() method.</li>
+                        </ul>
+                        <p class="mt-5 mb-1">We can use style property in DOM to manipulate element's style. Three different cases of manipulating css style are:</p>
+                        <ul class="list-disc px-5">
+                            <li>We can directly assign the value of a style property of an element</li>
+                            <li>We can usr multiple styles using cssText or classList method</li>
+                            <li>The classList.toggle() method adds a class to an element if it doesn't exist, and removes it if it does, allowing you to
+                            easily switch styles on and off.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
